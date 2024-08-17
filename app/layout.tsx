@@ -16,9 +16,9 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className="min-h-screen bg-gray-100">
+        <body className="min-h-screen bg-gray-100 flex">
           <Nav />
-          <main>{children}</main>
+          <main className="flex-1 p-4">{children}</main>
         </body>
       </html>
     </ClerkProvider>
